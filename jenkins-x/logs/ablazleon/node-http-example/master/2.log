@@ -1,0 +1,112 @@
+
+Showing logs for build [32mablazleon-node-http-example-mas-265pl-2[0m stage [32mfrom-build-pack[0m and container [32mcredential-initializer[0m
+{"level":"info","ts":1594556068.212386,"caller":"creds-init/main.go:44","msg":"Credentials initialized."}
+
+Showing logs for build [32mablazleon-node-http-example-mas-265pl-2[0m stage [32mfrom-build-pack[0m and container [32mworking-dir-initializer[0m
+
+Showing logs for build [32mablazleon-node-http-example-mas-265pl-2[0m stage [32mfrom-build-pack[0m and container [32mplace-tools[0m
+
+Showing logs for build [32mablazleon-node-http-example-mas-265pl-2[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-ablazleon-node-http-example-mas-265pl-hqcmw[0m
+{"level":"info","ts":1594556079.1623337,"caller":"git/git.go:105","msg":"Successfully cloned https://github.com/*********/node-http-example.git @ v0.0.2 in path /workspace/source"}
+{"level":"warn","ts":1594556079.1625204,"caller":"git/git.go:152","msg":"Unexpected error: creating symlink: symlink /tekton/home/.ssh /root/.ssh: file exists"}
+{"level":"info","ts":1594556079.2061048,"caller":"git/git.go:133","msg":"Successfully initialized and updated submodules in path /workspace/source"}
+
+Showing logs for build [32mablazleon-node-http-example-mas-265pl-2[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-builder-home[0m
+
+Showing logs for build [32mablazleon-node-http-example-mas-265pl-2[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:b62b9e37e62091e451df9c166def3fa72e439b0b
+WARNING: no SHAs to merge, falling back to initial cloned commit
+
+Showing logs for build [32mablazleon-node-http-example-mas-265pl-2[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-jx-git-credentials[0m
+Generated Git credentials file /workspace/xdg_config/git/credentials
+
+Showing logs for build [32mablazleon-node-http-example-mas-265pl-2[0m stage [32mfrom-build-pack[0m and container [32mstep-build-npmrc[0m
+WARNING: failed to find Secret npm-token in namespace **
+
+Showing logs for build [32mablazleon-node-http-example-mas-265pl-2[0m stage [32mfrom-build-pack[0m and container [32mstep-build-npm-install[0m
+npm notice created a lockfile as package-lock.json. You should commit this file.
+npm WARN REPLACE_ME@1.0.0 No repository field.
+npm WARN REPLACE_ME@1.0.0 No license field.
+
+up to date in 0.261s
+found 0 vulnerabilities
+
+
+Showing logs for build [32mablazleon-node-http-example-mas-265pl-2[0m stage [32mfrom-build-pack[0m and container [32mstep-build-npm-test[0m
+
+> REPLACE_ME@1.0.0 test /workspace/source
+> echo "no test specified" && exit 0
+
+no test specified
+
+Showing logs for build [32mablazleon-node-http-example-mas-265pl-2[0m stage [32mfrom-build-pack[0m and container [32mstep-build-container-build[0m
+E0712 12:14:44.060398      11 aws_credentials.go:77] while getting AWS credentials NoCredentialProviders: no valid providers in chain. Deprecated.
+	For verbose messaging see aws.Config.CredentialsChainVerboseErrors
+[36mINFO[0m[0000] Using dockerignore file: /workspace/source/.dockerignore 
+[36mINFO[0m[0000] Retrieving image manifest node:9-slim        
+E0712 12:14:44.271265      11 metadata.go:154] while reading 'google-dockercfg' metadata: http status code: 404 while fetching url http://metadata.google.internal./computeMetadata/v1/instance/attributes/google-dockercfg
+E0712 12:14:44.274325      11 metadata.go:166] while reading 'google-dockercfg-url' metadata: http status code: 404 while fetching url http://metadata.google.internal./computeMetadata/v1/instance/attributes/google-dockercfg-url
+[36mINFO[0m[0001] Retrieving image manifest node:9-slim        
+[36mINFO[0m[0001] Built cross stage deps: map[]                
+[36mINFO[0m[0001] Retrieving image manifest node:9-slim        
+[36mINFO[0m[0001] Retrieving image manifest node:9-slim        
+[36mINFO[0m[0002] Executing 0 build triggers                   
+[36mINFO[0m[0002] cmd: EXPOSE                                  
+[36mINFO[0m[0002] Adding exposed port: 8080/tcp                
+[36mINFO[0m[0002] Checking for cached layer gcr.io/myenv-283021/cache:8d19efd72071868e9ecb170baac5c4787486df49cb58ab2b94d0198966a476d4... 
+[36mINFO[0m[0002] No cached layer found for cmd COPY . .       
+[36mINFO[0m[0002] Unpacking rootfs as cmd COPY . . requires it. 
+[36mINFO[0m[0007] ENV PORT 8080                                
+[36mINFO[0m[0007] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0007] EXPOSE 8080                                  
+[36mINFO[0m[0007] cmd: EXPOSE                                  
+[36mINFO[0m[0007] Adding exposed port: 8080/tcp                
+[36mINFO[0m[0007] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0007] WORKDIR /usr/src/app                         
+[36mINFO[0m[0007] cmd: workdir                                 
+[36mINFO[0m[0007] Changed working directory to /usr/src/app    
+[36mINFO[0m[0007] Creating directory /usr/src/app              
+[36mINFO[0m[0007] Resolving 1 paths                            
+[36mINFO[0m[0007] Taking snapshot of files...                  
+[36mINFO[0m[0007] COPY . .                                     
+[36mINFO[0m[0007] Resolving 127 paths                          
+[36mINFO[0m[0007] Taking snapshot of files...                  
+[36mINFO[0m[0007] CMD ["npm", "start"]                         
+[36mINFO[0m[0007] Pushing layer gcr.io/myenv-283021/cache:8d19efd72071868e9ecb170baac5c4787486df49cb58ab2b94d0198966a476d4 to cache now 
+[36mINFO[0m[0007] No files changed in this command, skipping snapshotting. 
+
+Showing logs for build [32mablazleon-node-http-example-mas-265pl-2[0m stage [32mfrom-build-pack[0m and container [32mstep-build-post-build[0m
+no CVE provider running in the current ** namespace so skip adding image to be analysed
+
+Showing logs for build [32mablazleon-node-http-example-mas-265pl-2[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-changelog[0m
+Converted /workspace/source/charts/node-http-example to an unshallow repository
+Generating change log from git ref 8308c6f2e43c8809e4a18d5feb8400eda9992dd3 => ec38c7adbdbf34fafecfb5cc61983e650735bb32
+Associating user ********* in users.jenkins.io with email adrian.blazquez.leon@alumnos.upm.es to git GitProvider user with login -0 as emails match
+Adding label jenkins.io/git-github-userid=-0 to user ********* in users.jenkins.io
+WARNING: Failed to enrich commit 360a23ea5eabc2602a6ffd96a8526aa97d3117f4 with issues: User.jenkins.io "*********" is invalid: metadata.labels: Invalid value: "-0": a valid label must be an empty string or consist of alphanumeric characters, '-', '_' or '.', and must start and end with an alphanumeric character (e.g. 'MyValue',  or 'my_value',  or '12345', regex used for validation is '(([A-Za-z0-9][-A-Za-z0-9_.]*)?[A-Za-z0-9])?')
+WARNING: Failed to enrich commit 360a23ea5eabc2602a6ffd96a8526aa97d3117f4 with issues: users.jenkins.io "x-0" already exists
+Finding issues in commit messages using git format
+WARNING: No release found for *********/node-http-example and tag v0.0.2 so creating a new release
+Updated the release information at https://github.com/*********/node-http-example/releases/tag/v0.0.2
+generated: /workspace/source/charts/node-http-example/templates/release.yaml
+Created Release node-http-example-0-0-2 resource in namespace **
+Updating PipelineActivity *********-node-http-example-master-2 with version 0.0.2
+Updated PipelineActivities *********-node-http-example-master-2 with release notes URL: https://github.com/*********/node-http-example/releases/tag/v0.0.2
+
+Showing logs for build [32mablazleon-node-http-example-mas-265pl-2[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-helm-release[0m
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Adding missing Helm repo: storage.googleapis.com https://storage.googleapis.com/chartmuseum.jenkins-x.io
+Successfully added Helm repository storage.googleapis.com.
+Adding missing Helm repo: jenkins-x-chartmuseum http://jenkins-x-chartmuseum:8080
+Successfully added Helm repository jenkins-x-chartmuseum.
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Uploading chart file node-http-example-0.0.2.tgz to http://jenkins-x-chartmuseum:8080/api/charts
+Received 201 response: {"saved":true}
+
+Showing logs for build [32mablazleon-node-http-example-mas-265pl-2[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-jx-promote[0m
+WARNING: prow based install so skip waiting for the merge of Pull Requests to go green as currently there is an issue with gettingstatuses from the PR, see https://github.com/jenkins-x/**/issues/2410
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Promoting app node-http-example version 0.0.2 to namespace **-staging
+error: pulling environment repo https://github.com/*********/environment-mycluster-staging.git into /tmp/create-pr007732993: getting repository *********/environment-mycluster-staging: failed to get repository *********/environment-mycluster-staging due to: GET https://api.github.com/repos/*********/environment-mycluster-staging: 404 Not Found []
+[31m
+Pipeline failed on stage 'from-build-pack' : container 'step-promote-jx-promote'. The execution of the pipeline has stopped.[0m
